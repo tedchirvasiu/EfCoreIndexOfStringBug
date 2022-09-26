@@ -57,9 +57,9 @@ await dbContext.People
 
 ### Code
 
-The relevant code is situated in `Program.cs`  for .Net 6 or `Startup.cs` for .Net 5 and .Net Core 3.1.
-`EfCoreIndexOfStringBug.Database` simply deploys a test database using DbUp. You could also manually run the scripts found in the Migrations folder.
-This code sample demonstrates how it works in .Ef Core 3.1 but the same code does not in .Ef Core 5 and .Ef Core 6. It also illustrates a workaround in the form of another DbFunction replacing the native string.IndexOf.
+The relevant code is situated in `Program.cs`  for .Net 6 or `Startup.cs` for .Net 5 and .Net Core 3.1.  
+`EfCoreIndexOfStringBug.Database` simply deploys a test database using DbUp. You could also manually run the scripts found in the Migrations folder.  
+This code sample demonstrates how it works in .Ef Core 3.1 but the same code does not in .Ef Core 5 and .Ef Core 6. It also illustrates a workaround in the form of another DbFunction replacing the native string.IndexOf.  
 
 ### Stack traces
 ```
@@ -103,8 +103,8 @@ System.NullReferenceException
 
 ### Provider and version information
 
-EF Core version: 6.0.9 (and 5.0.17)
-Database provider: Microsoft.EntityFrameworkCore.SqlServer
-Target framework: .NET 6 (and .NET 5)
-Operating system: Windows 10 Pro 19043.2006
-IDE: Microsoft Visual Studio Community 2022 (64-bit) 17.2.6
+EF Core version: 6.0.9 (and 5.0.17)  
+Database provider: Microsoft.EntityFrameworkCore.SqlServer  
+Target framework: .NET 6 (and .NET 5)  
+Operating system: Windows 10 Pro 19043.2006  
+IDE: Microsoft Visual Studio Community 2022 (64-bit) 17.2.6  
